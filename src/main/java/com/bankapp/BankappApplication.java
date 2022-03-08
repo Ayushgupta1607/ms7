@@ -29,8 +29,8 @@ public class BankappApplication implements CommandLineRunner{
 //		userService.AddUser(new User("joe", "pqr", "ROLE_MGR", "joe@gmail.com"));
 
 		
-//		accountService.addAccount(new Account("Akshat", 40000.00, "8877553145", "Haryana", "akshat@gmail.com"));
-//		accountService.addAccount(new Account("Kinger", 60000.00, "9911459035", "Haryana", "kinger@gmail.com"));
+//		accountService.addAccount(new Account("Ayush", 40000.00, "8877553145", "Haryana", "ayush@gmail.com"));
+//		accountService.addAccount(new Account("Gupta", 60000.00, "9911459035", "Haryana", "gupta@gmail.com"));
 
 		
 	}

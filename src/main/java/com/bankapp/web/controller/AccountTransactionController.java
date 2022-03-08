@@ -21,7 +21,7 @@ public class AccountTransactionController {
 	@Autowired
 	public AccountTransactionController(AccountService accountService) {
 		this.accountService = accountService;
-	}
+	} 
 	
 	//-------------transfer---------------
 		@GetMapping(path = "transfer")

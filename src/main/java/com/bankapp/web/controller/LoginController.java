@@ -35,14 +35,13 @@ public class LoginController {
 	@GetMapping("/logout")
 	public String logout()
 	{
-		return "login";
+		return "login"; 
 	}
-	
 	@GetMapping(path = "adduser")
 	public ModelAndView addUserGet(ModelAndView mv) {
 		mv.setViewName("userlogin");
 		mv.addObject("userDto", new UserDto());
-		return mv;
+		return mv; 
 	}
 	@PostMapping(path = "adduser")
 	public String withdrawPost(@ModelAttribute UserDto userDto) {
