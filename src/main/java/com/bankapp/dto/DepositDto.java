@@ -10,4 +10,5 @@ import lombok.NoArgsConstructor;
 public class DepositDto {
 	private Integer accountId;
 	private Double amount;
+	private String method;
 }

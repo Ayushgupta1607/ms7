@@ -1,5 +1,7 @@
 package com.bankapp.web.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.bankapp.dto.AccountDto;
 import com.bankapp.dto.DtoUtil;
+import com.bankapp.model.persitance.Account;
 import com.bankapp.model.service.AccountService;
 
 @Controller
@@ -22,7 +25,13 @@ public class AccountDetailsController {
 		this.accountService = accountService;
 	}
 	
-	
+	@GetMapping(path="showAccounts")
+	public ModelAndView showAccounts(ModelAndView mv) {
+		mv.setViewName("showaccounts");
+		List<Account> accountsList=accountService.getAllAccounts();
+		mv.addObject("accounts",accountsList);
+		return mv;
+	}
 	
 
 	//-------------transfer---------------

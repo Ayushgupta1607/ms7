@@ -22,7 +22,7 @@
 	Enter profile:<form:select path="profile" >
 		<form:option value="ROLE_CLERK" label="clerk" />
 		<form:option value="ROLE_MGR" label="manager" />
-
+	<form:option value="ROLE_LAYMAN" label="layman" />
 	
 		</form:select>
 		<br />
